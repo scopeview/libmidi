@@ -1,0 +1,30 @@
+libmidi
+- a c++ midi library of general midi specification 1.1
+ 
+
+dependence
+- https://github.com/scopeview/libtemplate
+- https://github.com/scopeview/libtraits
+- gtest
+
+
+build and run
+- before build and run
+  	  change the gtest include path in Makefile before 'make run_unit_test'
+	  put libraries on the same directory
+		project/libtemplate
+		       /libtraits
+		       /libmidi
+- make
+- make run_unit_test
+- make run_demo
+
+
+TODO
+- this library doesn't implement midi spec fully, search TODO in source code
+  can't parse and regenerate complex midi files, for example data/test.mid
+- change makefile to autotools or cmake
+
+
+Other
+- this library is under Lifest Approach License
